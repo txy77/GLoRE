@@ -11,7 +11,7 @@ RE4R_ROOT_PATH = os.path.dirname(
 )
 sys.path.insert(0, RE4R_ROOT_PATH)
 
-import src.utils.wrapper as wrapper
+import utils.wrapper as wrapper
 
 def read_jsonl(filename):
     data = []

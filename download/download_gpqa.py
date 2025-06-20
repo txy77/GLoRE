@@ -12,7 +12,7 @@ RE4R_ROOT_PATH = os.path.dirname(
 )
 sys.path.insert(0, RE4R_ROOT_PATH)
 
-from src.utils.utils import write_jsonl
+from utils.utils import write_jsonl
 
 # ===== gpqa =====
 

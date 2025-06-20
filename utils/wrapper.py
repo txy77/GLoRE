@@ -16,9 +16,8 @@ RE4R_ROOT_PATH = os.path.dirname(
 )
 sys.path.insert(0, RE4R_ROOT_PATH)
 
-import src.utils.global_vars as gv
 from peft import get_peft_model, PromptTuningConfig
-from src.utils import utils
+from utils import utils
 import pdb
 from tqdm import tqdm
 import time
@@ -195,7 +194,6 @@ class ModelWrapper(nn.Module):
             
             # replace hidden states of last token position with context_vector
             for i in range(output.size(0)):
-                end_idx = gv.ATTN_MASK_END[i]
                 output[i, end_idx, :] = context_vector
             
             if type(outputs) is tuple:

@@ -11,8 +11,8 @@ RE4R_ROOT_PATH = os.path.dirname(
 )
 sys.path.insert(0, RE4R_ROOT_PATH)
 
-from src.dataset.base_dataset import BaseDataset
-from src.utils.utils import read_jsonl
+from dataset.base_dataset import BaseDataset
+from utils.utils import read_jsonl
 
 class MATHOAI(BaseDataset):
     def __init__(self, *args, **kwargs):

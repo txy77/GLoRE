@@ -10,7 +10,7 @@ RE4R_ROOT_PATH = os.path.dirname(
 )
 sys.path.insert(0, RE4R_ROOT_PATH)
 
-from src.utils.utils import write_jsonl
+from utils.utils import write_jsonl
 
 longcot_dataset_name = 'long_form_thought'
 longcot_dataset = load_dataset('RUC-AIBOX/long_form_thought_data_5k')['train']
